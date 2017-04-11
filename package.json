@@ -1,5 +1,5 @@
 {
-  "name": "mock-fs",
+  "name": "mock-fs-papandreou",
   "description": "A configurable mock file system.  You know, for testing.",
   "version": "3.12.1",
   "main": "lib/index.js",
