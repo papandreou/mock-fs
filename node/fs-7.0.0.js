@@ -472,7 +472,7 @@ fs.readFileSync = function(path, options) {
   var fd = isUserFd ? path : fs.openSync(path, flag, 0o666);
 
   var st = tryStatSync(fd, isUserFd);
-  var size = st.isFile() ? st.size : 0;
+  var size = st && st.isFile() ? st.size : 0;
   var pos = 0;
   var buffer; // single buffer with file data
   var buffers; // list for when size is unknown
